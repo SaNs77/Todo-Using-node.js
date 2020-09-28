@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #0d1521;
+  font-family: tahoma;
+  color: #989898;
+}
+
+#todo-table {
+  position: relative;
+  width: 95%;
+  background: #090d13;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#todo-table form:after {
+  margin: 0;
+  content: "";
+  display: block;
+  clear: both;
+}
+.list {
+  margin-top: 10px;
+  background: rgb(58, 57, 57);
+  border-radius: 15px;
+  border: 3px white solid;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 20px;
+  background: #181c22;
+  border: 0;
+  float: left;
+  font-size: 20px;
+  color: #989898;
+  margin-right: 10px;
+  border-radius: 1rem;
+}
+
+button {
+  padding: 20px;
+  width: 25%;
+  float: left;
+  background: rgb(109, 153, 109);
+  border: 0;
+  box-sizing: border-box;
+  color: Black;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+button:hover {
+  background: rgb(13, 104, 13);
+  color: white;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 100px;
+}
+
+li {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+li:hover {
+  text-decoration: line-through;
+  background: transparent;
+  color: red;
+}
+
+hr {
+  position: absolute;
+  left: 35px;
+  width: 93%;
+  height: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+
+  animation-name: animate;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+span {
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3rem;
+}
+span {
+  animation-name: todo;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animate {
+  0% {
+    font-size: 3rem;
+  }
+  20% {
+    font-size: 30px;
+  }
+  50% {
+    font-size: 40px;
+    letter-spacing: 15px;
+  }
+  60% {
+    font-size: 30px;
+  }
+  80% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+
+@keyframes todo {
+  50% {
+    transform: translateY(10);
+  }
+}
